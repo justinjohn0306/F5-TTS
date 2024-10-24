@@ -300,7 +300,7 @@ def start_training(
         fp16 = ""
 
     cmd = (
-        f"accelerate launch {fp16} finetune-cli.py --exp_name {exp_name} "
+        f"accelerate launch {fp16} finetune_cli.py --exp_name {exp_name} "
         f"--learning_rate {learning_rate} "
         f"--batch_size_per_gpu {batch_size_per_gpu} "
         f"--batch_size_type {batch_size_type} "
